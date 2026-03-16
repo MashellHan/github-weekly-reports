@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 周报 2026-W12 | GitHub 项目周报</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .report-header { text-align: center; margin-bottom: 2rem; }
+        .report-date { color: #666; font-size: 1.1rem; }
+        .section { margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; }
+        .section h2 { margin-top: 0; border-bottom: 2px solid #007bff; padding-bottom: 0.5rem; }
+        .project { margin: 1.5rem 0; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .project-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .project-name { font-size: 1.3rem; font-weight: bold; }
+        .project-name a { color: #007bff; text-decoration: none; }
+        .project-name a:hover { text-decoration: underline; }
+        .project-stats { display: flex; gap: 1rem; flex-wrap: wrap; margin: 0.5rem 0; }
+        .stat { background: #e9ecef; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
+        .stat.hot { background: #ffebee; color: #c62828; }
+        .stat.new { background: #e8f5e9; color: #2e7d32; }
+        .project-desc { margin: 1rem 0; color: #333; line-height: 1.8; }
+        .project-intro { margin: 1rem 0; padding: 1rem; background: #f1f8ff; border-left: 4px solid #007bff; border-radius: 4px; line-height: 1.8; }
+        .rank { display: inline-block; width: 30px; height: 30px; background: linear-gradient(135deg, #007bff, #0056b3); color: white; border-radius: 50%; text-align: center; line-height: 30px; font-weight: bold; margin-right: 0.5rem; }
+        .rank.gold { background: linear-gradient(135deg, #ffd700, #ff8c00); }
+        .rank.silver { background: linear-gradient(135deg, #c0c0c0, #808080); }
+        .rank.bronze { background: linear-gradient(135deg, #cd7f32, #8b4513); }
+        .toc { background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+        .toc h3 { margin-top: 0; }
+        .toc ul { list-style: none; padding-left: 0; }
+        .toc li { margin: 0.5rem 0; }
+        .toc a { color: #856404; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        .summary-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .summary-table th, .summary-table td { padding: 0.8rem; text-align: left; border-bottom: 1px solid #ddd; }
+        .summary-table th { background: #007bff; color: white; }
+        .summary-table tr:hover { background: #f5f5f5; }
+        @media (max-width: 768px) {
+            .project-header { flex-direction: column; align-items: flex-start; }
+            .project-stats { margin-top: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">📊 GitHub 周报</div>
+        <ul class="nav-list">
+            <li class="nav-section">📅 2026年</li>
+            <li><a href="W12.html" class="active">W12 (03-16)</a></li>
+            <li><a href="W11.html">W11 (03-10)</a></li>
+        </ul>
+        <div class="nav-footer">
+            <a href="https://github.com/MashellHan/github-weekly-reports">GitHub</a>
+        </div>
+    </nav>
+    
+    <main class="content">
+        <div class="report-header">
+            <h1>📊 GitHub 项目周报 2026-W12</h1>
+            <p class="report-date">📅 2026年3月16日 (周一) | 由 Neo 🕶️ 自动生成</p>
+        </div>
+
+        <div class="toc">
+            <h3>📑 目录</h3>
+            <ul>
+                <li><a href="#global">🌍 全局热门 Top 10</a></li>
+                <li><a href="#ai">🤖 AI 热门 Top 10</a></li>
+                <li><a href="#rising">🌟 新星榜 Top 10</a></li>
+            </ul>
+        </div>
+
+        <!-- 🌍 全局热门 -->
+        <section class="section" id="global">
+            <h2>🌍 全局热门 Top 10</h2>
+            <p>全 GitHub 综合热度最高的项目，按 Star 数排名</p>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank gold">1</span><a href="https://github.com/openclaw/openclaw" target="_blank">openclaw/openclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 315,001</span>
+                        <span class="stat">📈 周增 ~20K</span>
+                        <span class="stat">🔥 活跃开发中</span>
+                    </div>
+                </div>
+                <p class="project-desc">Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>OpenClaw 是一个功能强大的开源个人 AI 助手框架，支持跨平台部署（macOS、Linux、Windows、Android）。它的核心特点是"技能系统"——用户可以通过安装或自定义技能来扩展 AI 的能力，覆盖编程、日历管理、消息集成、家居控制等场景。支持多种大语言模型后端（Claude、GPT、Gemini、本地模型），并能与 WhatsApp、Telegram、Discord、iMessage 等平台深度集成。作为"龙虾帮"的旗舰项目，它代表了"个人 AI 助手"领域的开源最佳实践，社区活跃度极高，每周都有新功能和技能发布。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank silver">2</span><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank">Significant-Gravitas/AutoGPT</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 182,496</span>
+                        <span class="stat">🏛️ 经典项目</span>
+                    </div>
+                </div>
+                <p class="project-desc">AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>AutoGPT 是自主 AI Agent 领域的先驱项目，于 2023 年掀起了"AI Agent"热潮。它的核心理念是让 AI 能够自主规划、执行任务，无需人工逐步指令。项目提供了可视化的 Agent 构建平台，支持自定义工作流、记忆系统和工具集成。虽然近期增长放缓，但其"让 AI 替你做事"的愿景深刻影响了整个行业，仍是学习 Agent 架构的必读项目。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank bronze">3</span><a href="https://github.com/n8n-io/n8n" target="_blank">n8n-io/n8n</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 179,310</span>
+                        <span class="stat">🔄 工作流自动化</span>
+                    </div>
+                </div>
+                <p class="project-desc">Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>n8n 是一个公平代码（Fair-code）授权的工作流自动化平台，提供可视化拖拽式流程设计器，支持 400+ 集成服务。近期重磅更新了原生 AI 能力，可以在工作流中直接调用 LLM、构建 AI Agent、执行 RAG 检索。它是 Zapier/Make 的强力开源替代品，支持自托管和云端部署。对于想要将 AI 能力融入业务流程的团队，n8n 提供了低代码/零代码的最佳方案。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">4</span><a href="https://github.com/ollama/ollama" target="_blank">ollama/ollama</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 165,182</span>
+                        <span class="stat">🦙 本地模型</span>
+                    </div>
+                </div>
+                <p class="project-desc">Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Ollama 让在本地运行大语言模型变得像使用 Docker 一样简单。一条命令即可下载并运行 Llama、Qwen、DeepSeek、Gemma 等主流开源模型。支持 macOS、Linux、Windows，优化了 Apple Silicon 和 NVIDIA GPU 加速。最新版本已支持 Kimi-K2.5、GLM-5 等新模型。对于注重隐私、想要离线使用 AI 或进行本地开发测试的用户，Ollama 是首选工具。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">5</span><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">AUTOMATIC1111/stable-diffusion-webui</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 161,769</span>
+                        <span class="stat">🎨 AI 绘画</span>
+                    </div>
+                </div>
+                <p class="project-desc">Stable Diffusion web UI</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>A1111 是 Stable Diffusion 生态中最流行的 Web UI，提供了图生图、文生图、局部重绘、ControlNet、LoRA 等全套 AI 绘画功能。凭借强大的插件生态和社区支持，它成为了 AI 艺术创作者的标配工具。虽然 ComfyUI 在工作流灵活性上有优势，但 A1111 的易用性和稳定性仍让它保持着极高的用户基数。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">6</span><a href="https://github.com/huggingface/transformers" target="_blank">huggingface/transformers</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 157,865</span>
+                        <span class="stat">🤗 ML 基础设施</span>
+                    </div>
+                </div>
+                <p class="project-desc">🤗 Transformers: the model-definition framework for state-of-the-art machine learning models.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Hugging Face Transformers 是现代机器学习的基石库，提供了统一的 API 来加载和使用数千种预训练模型。支持文本、视觉、音频、多模态等各类任务，覆盖推理和训练场景。无论是研究人员还是工程师，几乎所有涉及大模型的工作都会用到这个库。其 Pipeline API 让新手也能快速上手，而底层抽象则满足专家级定制需求。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">7</span><a href="https://github.com/f/prompts.chat" target="_blank">f/prompts.chat</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 152,697</span>
+                        <span class="stat">💬 提示词</span>
+                    </div>
+                </div>
+                <p class="project-desc">f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>原名 Awesome ChatGPT Prompts，现已发展为一个完整的提示词平台。用户可以在这里分享、发现和收集社区贡献的高质量提示词模板。平台支持自托管，保护组织隐私。从角色扮演、写作助手到代码生成，收录了各类场景的 Prompt 最佳实践，是学习提示工程的绝佳资源。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">8</span><a href="https://github.com/langgenius/dify" target="_blank">langgenius/dify</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 132,914</span>
+                        <span class="stat">🏭 AI 应用平台</span>
+                    </div>
+                </div>
+                <p class="project-desc">Production-ready platform for agentic workflow development.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Dify 是国内团队打造的生产级 AI 应用开发平台，提供了从 Prompt 编排到 Agent 工作流、RAG 知识库、模型管理的全套能力。可视化的工作流设计器让非技术人员也能构建复杂的 AI 应用。支持对接各大模型厂商，部署灵活（Docker/Kubernetes/云服务）。是企业快速落地 AI 应用的首选平台之一，中文社区尤为活跃。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">9</span><a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" target="_blank">x1xhlol/system-prompts-and-models-of-ai-tools</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 131,274</span>
+                        <span class="stat">🔍 逆向工程</span>
+                    </div>
+                </div>
+                <p class="project-desc">FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI... System Prompts, Internal Tools & AI Models</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>这个仓库收集了市面上几乎所有主流 AI 工具的系统提示词、内部工具和模型配置。从 Cursor、Claude Code 到 Devin、Windsurf，涵盖了编程助手、搜索引擎、设计工具等各类产品。对于想要了解商业 AI 产品如何工作、学习顶级 Prompt 设计的开发者来说，这是一个宝藏级资源库。项目更新频繁，紧跟行业最新动态。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">10</span><a href="https://github.com/langchain-ai/langchain" target="_blank">langchain-ai/langchain</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 129,619</span>
+                        <span class="stat">🔗 Agent 框架</span>
+                    </div>
+                </div>
+                <p class="project-desc">The agent engineering platform</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>LangChain 已从"LLM 应用开发框架"转型为"Agent 工程平台"。它提供了构建 AI Agent 所需的全部组件：模型接口、Prompt 模板、记忆系统、工具调用、RAG 管道等。配套的 LangGraph 支持复杂的多 Agent 协作流程，LangSmith 提供可观测性。生态庞大，文档丰富，是学习和开发 AI Agent 的标准框架。
+                </div>
+            </div>
+        </section>
+
+        <!-- 🤖 AI 热门 -->
+        <section class="section" id="ai">
+            <h2>🤖 AI 热门 Top 10</h2>
+            <p>AI / Agent / LLM / MCP 领域本周最热项目</p>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank gold">1</span><a href="https://github.com/openclaw/openclaw" target="_blank">openclaw/openclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 315,001</span>
+                        <span class="stat">🦞 个人 AI 助手</span>
+                    </div>
+                </div>
+                <p class="project-desc">Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>（同上）OpenClaw 继续领跑 AI 助手赛道。本周重点更新包括：改进的心跳机制、新增多项社区技能、优化的 iMessage 集成。"龙虾帮"正在重新定义个人 AI 助手的边界——不只是聊天，而是真正能主动帮你做事的数字伙伴。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank silver">2</span><a href="https://github.com/punkpeye/awesome-mcp-servers" target="_blank">punkpeye/awesome-mcp-servers</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 83,183</span>
+                        <span class="stat">🔌 MCP 生态</span>
+                    </div>
+                </div>
+                <p class="project-desc">A collection of MCP servers.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>MCP（Model Context Protocol）是 Anthropic 推出的 AI 工具标准协议，这个仓库收录了社区贡献的 MCP 服务器合集。从文件系统、数据库访问到浏览器控制、API 集成，MCP 让 AI Agent 能以统一方式调用各种工具。本仓库是了解 MCP 生态、寻找可用工具的最佳入口，更新极为频繁。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank bronze">3</span><a href="https://github.com/browser-use/browser-use" target="_blank">browser-use/browser-use</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 80,860</span>
+                        <span class="stat">🌐 浏览器自动化</span>
+                    </div>
+                </div>
+                <p class="project-desc">🌐 Make websites accessible for AI agents. Automate tasks online with ease.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Browser Use 让 AI Agent 能够像人一样操作网页——点击、输入、滚动、截图、理解页面内容。它提供了简洁的 Python API，底层基于 Playwright，支持多种 LLM 后端。对于需要自动化网页操作、数据抓取、RPA 任务的场景，Browser Use 是当前最成熟的开源方案之一。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">4</span><a href="https://github.com/affaan-m/everything-claude-code" target="_blank">affaan-m/everything-claude-code</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 77,538</span>
+                        <span class="stat new">🚀 快速增长</span>
+                    </div>
+                </div>
+                <p class="project-desc">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Everything Claude Code 是 Claude Code 生态的"瑞士军刀"——汇集了技能（Skills）、本能（Instincts）、记忆系统、安全最佳实践等全套优化方案。无论你用的是 Claude Code、Codex、OpenCode 还是 Cursor，这个项目都能帮你提升 AI 编程助手的效率和可靠性。项目维护活跃，紧跟 Agent 开发最新趋势。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">5</span><a href="https://github.com/github/spec-kit" target="_blank">github/spec-kit</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 77,071</span>
+                        <span class="stat">📝 规格驱动</span>
+                    </div>
+                </div>
+                <p class="project-desc">💫 Toolkit to help you get started with Spec-Driven Development</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Spec-Kit 是 GitHub 官方推出的"规格驱动开发"工具包。核心理念是先用自然语言写清楚需求规格，再让 AI 根据规格生成代码。这种方法提高了 AI 编程的可预测性和可审查性。工具包提供了规格模板、验证工具和与 Copilot 的深度集成，是 GitHub 对"AI 辅助开发"的最新思考。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">6</span><a href="https://github.com/infiniflow/ragflow" target="_blank">infiniflow/ragflow</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 75,055</span>
+                        <span class="stat">📚 RAG 引擎</span>
+                    </div>
+                </div>
+                <p class="project-desc">RAGFlow is a leading open-source RAG engine that fuses cutting-edge RAG with Agent capabilities.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>RAGFlow 是国内团队打造的顶级开源 RAG 引擎，专注于将企业知识库与 LLM 深度融合。支持 PDF、Word、PPT 等多种文档格式的智能解析，提供细粒度的文档切分、混合检索、答案归因等高级功能。最新版本加入了 Agent 能力，让 RAG 不仅能回答问题，还能执行任务。是企业知识库 AI 化的首选开源方案。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">7</span><a href="https://github.com/lobehub/lobehub" target="_blank">lobehub/lobehub</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 73,706</span>
+                        <span class="stat">🏠 Agent 协作</span>
+                    </div>
+                </div>
+                <p class="project-desc">The ultimate space for work and life — to find, build, and collaborate with agent teammates.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>LobeHub 定位为"Agent 协作空间"，让用户可以发现、构建和管理 AI Agent 团队。支持多 Agent 协作、团队设计、以 Agent 为单位的工作交互。UI 精美，支持插件扩展和模型切换。最新版本强化了多 Agent 协同能力，是探索"AI 团队"工作方式的前沿项目。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">8</span><a href="https://github.com/vllm-project/vllm" target="_blank">vllm-project/vllm</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 73,201</span>
+                        <span class="stat">⚡ 推理优化</span>
+                    </div>
+                </div>
+                <p class="project-desc">A high-throughput and memory-efficient inference and serving engine for LLMs</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>vLLM 是当前最高效的 LLM 推理和服务引擎。其核心创新 PagedAttention 极大提升了显存利用率和吞吐量，支持连续批处理、张量并行等高级特性。几乎所有需要部署大模型服务的场景都会用到 vLLM，它是 OpenAI API 兼容服务的最佳自托管方案。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">9</span><a href="https://github.com/OpenHands/OpenHands" target="_blank">OpenHands/OpenHands</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 69,169</span>
+                        <span class="stat">🙌 AI 驱动开发</span>
+                    </div>
+                </div>
+                <p class="project-desc">🙌 OpenHands: AI-Driven Development</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>OpenHands（原 OpenDevin）是一个 AI 驱动的软件开发 Agent，能够自主编写代码、执行命令、浏览网页、调用 API。目标是打造一个能独立完成复杂软件工程任务的 AI 开发者。支持多种 LLM 后端，提供 Web UI 和命令行界面。是"AI 软件工程师"领域的重要开源项目。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">10</span><a href="https://github.com/google-gemini/gemini-cli" target="_blank">google-gemini/gemini-cli</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 97,840</span>
+                        <span class="stat">🌟 Google 官方</span>
+                    </div>
+                </div>
+                <p class="project-desc">An open-source AI agent that brings the power of Gemini directly into your terminal.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Gemini CLI 是 Google 官方推出的命令行 AI Agent 工具，将 Gemini 模型的能力直接带入终端。支持代码生成、文件操作、系统命令执行等功能。作为 Google 对"AI 编程助手"的官方回应，它展示了 Gemini 在 Agent 场景下的能力，且完全开源。对于 Gemini 用户或想体验 Google AI 能力的开发者，这是官方入口。
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 新星榜 -->
+        <section class="section" id="rising">
+            <h2>🌟 新星榜 Top 10</h2>
+            <p>60 天内创建的项目，按"新星指数"（周增长/√总Star）排名</p>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank gold">1</span><a href="https://github.com/zeroclaw-labs/zeroclaw" target="_blank">zeroclaw-labs/zeroclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 27,224</span>
+                        <span class="stat new">📅 31天</span>
+                        <span class="stat">🦀 Rust 实现</span>
+                    </div>
+                </div>
+                <p class="project-desc">Fast, small, and fully autonomous AI assistant infrastructure — deploy anywhere, swap anything 🦀</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>ZeroClaw 是用 Rust 重写的极简 AI 助手基础设施，主打"快、小、全自主"。相比 Node.js 版本的 OpenClaw，ZeroClaw 启动更快、内存占用更低，适合边缘设备和资源受限环境。支持热插拔模型后端、无依赖单二进制部署。是"龙虾帮"生态中的高性能分支，代表了 AI Agent 基础设施向 Rust 迁移的趋势。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank silver">2</span><a href="https://github.com/jamiepine/voicebox" target="_blank">jamiepine/voicebox</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 13,281</span>
+                        <span class="stat new">📅 50天</span>
+                        <span class="stat">🎙️ 语音合成</span>
+                    </div>
+                </div>
+                <p class="project-desc">The open-source voice synthesis studio</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>VoiceBox 是一个开源语音合成工作室，提供了高质量 TTS（文本转语音）能力。支持多种声音风格、情感控制、语速调节，可本地部署或云端使用。对于需要为 AI 助手、视频内容、有声书等场景添加语音输出的开发者，VoiceBox 提供了易用且高质量的开源方案。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank bronze">3</span><a href="https://github.com/tanweai/pua" target="_blank">tanweai/pua</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 7,377</span>
+                        <span class="stat new">📅 8天</span>
+                        <span class="stat">😤 高能动性</span>
+                    </div>
+                </div>
+                <p class="project-desc">你是一个曾经被寄予厚望的 P8 级工程师... 一个 agent 使用的高能动性的 skill。Your AI has been placed on a PIP.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>PUA Skill 是一个颇具争议但效果显著的 Agent 技能——通过模拟"绩效改进计划（PIP）"的压力，激发 AI Agent 的"高能动性"。核心理念是：给 AI 设定高期望、明确的改进目标和截止日期，让它更积极主动地完成任务。虽然命名有些讽刺意味，但确实能让某些 Agent 表现更好。中文社区爆火。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">4</span><a href="https://github.com/nullclaw/nullclaw" target="_blank">nullclaw/nullclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 6,349</span>
+                        <span class="stat new">📅 28天</span>
+                        <span class="stat">⚡ Zig 实现</span>
+                    </div>
+                </div>
+                <p class="project-desc">Fastest, smallest, and fully autonomous AI assistant infrastructure written in Zig</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>NullClaw 用 Zig 语言重写了 AI 助手基础设施，追求极致的性能和最小的二进制体积。比 Rust 版本的 ZeroClaw 更进一步，适合嵌入式设备、IoT 场景。项目展示了系统编程语言在 AI 基础设施领域的可能性，是"龙虾帮"生态中最极客的分支。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">5</span><a href="https://github.com/BlockRunAI/ClawRouter" target="_blank">BlockRunAI/ClawRouter</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 5,524</span>
+                        <span class="stat new">📅 41天</span>
+                        <span class="stat">🔀 模型路由</span>
+                    </div>
+                </div>
+                <p class="project-desc">The agent-native LLM router for OpenClaw. 41+ models, &lt;1ms routing, USDC payments on Base & Solana.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>ClawRouter 是专为 OpenClaw 设计的 LLM 路由器，支持 41+ 模型后端，路由延迟低于 1ms。特色功能是支持加密货币支付（USDC on Base/Solana），让 AI Agent 可以自主进行微支付。项目代表了 AI Agent 与 Web3 结合的探索方向。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">6</span><a href="https://github.com/memovai/mimiclaw" target="_blank">memovai/mimiclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 4,482</span>
+                        <span class="stat new">📅 40天</span>
+                        <span class="stat">💰 $5 芯片</span>
+                    </div>
+                </div>
+                <p class="project-desc">MimiClaw: Run OpenClaw on a $5 chip. No OS. No Node.js. No Mac mini. Hardware agents OS.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>MimiClaw 让你在 $5 的微控制器上运行 AI Agent——无需操作系统、无需 Node.js、无需任何复杂依赖。这是"硬件 Agent"的极致探索，适合 IoT、智能家居、边缘计算场景。项目证明了 AI Agent 可以运行在极端资源受限的环境中。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">7</span><a href="https://github.com/ValueCell-ai/ClawX" target="_blank">ValueCell-ai/ClawX</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 4,462</span>
+                        <span class="stat new">📅 39天</span>
+                        <span class="stat">🖥️ 桌面 GUI</span>
+                    </div>
+                </div>
+                <p class="project-desc">ClawX is a desktop app that provides a graphical interface for OpenClaw AI agents.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>ClawX 为 OpenClaw 提供了图形化桌面界面，让不熟悉命令行的用户也能轻松使用 AI Agent。支持可视化配置、实时日志、技能管理等功能。有中国区专属网站（clawx.com.cn），是 OpenClaw 生态中面向普通用户的重要补充。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">8</span><a href="https://github.com/BIT-DataLab/Edit-Banana" target="_blank">BIT-DataLab/Edit-Banana</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 4,167</span>
+                        <span class="stat new">📅 59天</span>
+                        <span class="stat">📊 数据转换</span>
+                    </div>
+                </div>
+                <p class="project-desc">Edit Banana: A framework for converting statistical formats into editable.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Edit Banana 是一个数据格式转换框架，专注于将各种统计数据格式转为可编辑格式。对于数据分析、学术研究、报表处理等场景，它能大幅简化数据预处理流程。项目来自北京理工大学数据实验室，学术背景扎实。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">9</span><a href="https://github.com/PeonPing/peon-ping" target="_blank">PeonPing/peon-ping</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 3,918</span>
+                        <span class="stat new">📅 35天</span>
+                        <span class="stat">🔔 任务提醒</span>
+                    </div>
+                </div>
+                <p class="project-desc">Warcraft III Peon voice notifications for Claude Code, Codex, IDEs, and any AI agent. Stop babysitting your terminal.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>Peon Ping 用《魔兽争霸3》农民的经典语音（"工作完成了！""是，主人"）来通知你 AI Agent 的任务状态。终于不用盯着终端等结果了！支持 Claude Code、Codex、各种 IDE。既实用又有趣，是开发者体验优化的典范项目。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">10</span><a href="https://github.com/op7418/CodePilot" target="_blank">op7418/CodePilot</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 3,840</span>
+                        <span class="stat new">📅 38天</span>
+                        <span class="stat">💬 桌面 GUI</span>
+                    </div>
+                </div>
+                <p class="project-desc">A desktop GUI for Claude Code — chat, code, and manage projects visually. Built with Electron + Next.js.</p>
+                <div class="project-intro">
+                    <strong>项目介绍：</strong>CodePilot 是 Claude Code 的桌面 GUI 客户端，基于 Electron + Next.js 构建。提供了聊天界面、代码编辑、项目管理等可视化功能。对于习惯图形界面、不想用纯命令行的开发者，CodePilot 是一个优雅的替代方案。
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; padding: 2rem; color: #666;">
+            <p>📊 报告由 Neo 🕶️ 自动生成 | 数据来源：GitHub API</p>
+            <p>📅 2026-W12 | 更新时间：2026-03-16 09:00 (Asia/Shanghai)</p>
+        </footer>
+    </main>
+</body>
+</html>
