@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 周报 2026-W15 | GitHub 项目周报</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        .report-header { text-align: center; margin-bottom: 2rem; }
+        .report-date { color: #666; font-size: 1.1rem; }
+        .section { margin: 2rem 0; padding: 1.5rem; background: #f8f9fa; border-radius: 12px; }
+        .section h2 { margin-top: 0; border-bottom: 2px solid #007bff; padding-bottom: 0.5rem; }
+        .project { margin: 1.5rem 0; padding: 1.5rem; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .project-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .project-name { font-size: 1.3rem; font-weight: bold; }
+        .project-name a { color: #007bff; text-decoration: none; }
+        .project-name a:hover { text-decoration: underline; }
+        .project-stats { display: flex; gap: 1rem; flex-wrap: wrap; margin: 0.5rem 0; }
+        .stat { background: #e9ecef; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
+        .stat.hot { background: #ffebee; color: #c62828; }
+        .stat.new { background: #e8f5e9; color: #2e7d32; }
+        .project-desc { margin: 1rem 0; color: #333; line-height: 1.8; }
+        .project-intro { margin: 1rem 0; padding: 1rem; background: #f1f8ff; border-left: 4px solid #007bff; border-radius: 4px; line-height: 1.8; }
+        .rank { display: inline-block; width: 30px; height: 30px; background: linear-gradient(135deg, #007bff, #0056b3); color: white; border-radius: 50%; text-align: center; line-height: 30px; font-weight: bold; margin-right: 0.5rem; }
+        .rank.gold { background: linear-gradient(135deg, #ffd700, #ff8c00); }
+        .rank.silver { background: linear-gradient(135deg, #c0c0c0, #808080); }
+        .rank.bronze { background: linear-gradient(135deg, #cd7f32, #8b4513); }
+        .toc { background: #fff3cd; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+        .toc h3 { margin-top: 0; }
+        .toc ul { list-style: none; padding-left: 0; }
+        .toc li { margin: 0.5rem 0; }
+        .toc a { color: #856404; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .project-header { flex-direction: column; align-items: flex-start; }
+            .project-stats { margin-top: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">📊 GitHub 周报</div>
+        <ul class="nav-list">
+            <li class="nav-section">📅 2026年</li>
+            <li><a href="W15.html" class="active">W15 (04-08)</a></li>
+            <li><a href="W14.html">W14 (03-30)</a></li>
+            <li><a href="W12.html">W12 (03-16)</a></li>
+            <li><a href="W11.html">W11 (03-10)</a></li>
+        </ul>
+        <div class="nav-footer">
+            <a href="https://github.com/MashellHan/github-weekly-reports">GitHub</a>
+        </div>
+    </nav>
+    
+    <main class="content">
+        <div class="report-header">
+            <h1>📊 GitHub 项目周报 2026-W15</h1>
+            <p class="report-date">📅 2026年4月8日 (周三) | 由 Neo 🕶️ 自动生成</p>
+        </div>
+
+        <div class="toc">
+            <h3>📑 目录</h3>
+            <ul>
+                <li><a href="#global">🌍 全局热门 Top 10</a></li>
+                <li><a href="#ai">🤖 AI 热门 Top 10</a></li>
+                <li><a href="#rising">🌟 新星榜 Top 10</a></li>
+            </ul>
+        </div>
+
+        <!-- ==================== 🌍 全局热门 ==================== -->
+        <section class="section" id="global">
+            <h2>🌍 全局热门 Top 10</h2>
+            <p>全 GitHub 综合热度最高的项目，按 Star 数 + 近期活跃度排名</p>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank gold">1</span><a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank">codecrafters-io/build-your-own-x</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 487,271</span>
+                        <span class="stat">Markdown</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    GitHub 上的"万星之王"，一份通过从零构建来学习编程的终极指南。涵盖数据库、操作系统、搜索引擎、编译器、Web 服务器、区块链、游戏引擎等数十个技术领域，每个分类下提供大量动手教程链接。项目的核心理念是"理解技术的最好方式就是自己重新造一遍"，帮助开发者从被动阅读文档转变为主动实践构建。自 2018 年创建以来持续增长，已稳居 GitHub 总星标第一。社区贡献活跃，每周都有新教程被添加进来，覆盖几乎所有主流编程语言。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank silver">2</span><a href="https://github.com/sindresorhus/awesome" target="_blank">sindresorhus/awesome</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 453,003</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Awesome 列表的总目录——一个精心策划的各领域"精选列表的列表"。从编程语言、框架、开发工具到媒体、安全、商业等非技术主题，汇集了数千个由社区维护的子列表。每个子列表都遵循严格的质量标准：需有贡献指南、合理分类、简洁描述。由 Node.js 社区知名开发者 Sindre Sorhus 发起和维护，已成为 GitHub 生态中最具影响力的知识组织形式之一。任何新开发者入门的第一站，也是资深工程师发现新工具的常用资源。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank bronze">3</span><a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank">freeCodeCamp/freeCodeCamp</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 442,153</span>
+                        <span class="stat">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    全球最大的免费编程学习平台，提供超过 11,000 小时的互动式课程，涵盖 Web 开发、数据科学、机器学习、数学、信息安全等领域。学员可以获得经过认证的证书，完全免费。平台采用项目驱动式教学，每个课程模块都以构建实际项目结束。社区规模庞大，拥有数百万活跃学习者和数千名志愿者贡献课程内容。代码库本身也是 TypeScript 全栈开发的优秀范例，采用 React、Node.js 和 MongoDB 技术栈。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">4</span><a href="https://github.com/public-apis/public-apis" target="_blank">public-apis/public-apis</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 420,038</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    免费公共 API 的集合大全，按类别分为动物、动漫、区块链、天气、金融、政府数据等 40 多个分类。每个 API 条目注明是否需要认证、是否支持 HTTPS、是否有 CORS 限制，方便开发者快速筛选。这是全球开发者在做 side project 或 hackathon 时的第一选择——需要什么数据，先来这里找 API。社区贡献标准严格，要求 API 必须免费可用、文档完善、服务稳定。从初学者到高级开发者都是重度用户。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">5</span><a href="https://github.com/EbookFoundation/free-programming-books" target="_blank">EbookFoundation/free-programming-books</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 385,164</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    免费编程书籍的全球最大合集，支持超过 40 种语言版本。从经典计算机科学教材到最新的 AI/ML 资源，从入门教程到高级系统设计，几乎覆盖所有技术领域。由 Free Ebook Foundation 非营利组织维护，确保所有资源合法免费可访问。除了书籍，还收录免费在线课程、播客、编程练习平台等学习资源。对于发展中国家的开发者来说，这个列表是接触世界一流编程教育的重要桥梁。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">6</span><a href="https://github.com/kamranahmedse/developer-roadmap" target="_blank">kamranahmedse/developer-roadmap</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 352,477</span>
+                        <span class="stat">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    交互式开发者学习路线图，覆盖前端、后端、DevOps、全栈、Android、PostgreSQL DBA、区块链、AI/ML 等十多条专业路径。每条路线以可视化节点图呈现，点击节点可以看到推荐学习资源和技能说明。2026 年新增 AI 工程师路线图，反映行业趋势。网站 roadmap.sh 每月访问量超千万，是技术从业者规划职业发展的标杆参考。项目由 Kamran Ahmed 独立维护，内容质量极高。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">7</span><a href="https://github.com/openclaw/openclaw" target="_blank">openclaw/openclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 351,437</span>
+                        <span class="stat">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    个人 AI 助手框架，支持全平台部署（macOS/Linux/Windows），可连接多种 LLM 后端（Claude、GPT、Gemini、本地模型等）。核心特色是"技能系统"——通过 SKILL.md 文件定义可复用的 Agent 能力模块，以及"记忆系统"实现跨会话的上下文持续。支持 Discord、Telegram、iMessage 等多渠道接入，可以控制浏览器、操作文件系统、管理定时任务。社区生态爆发式增长，已有数千个第三方技能。本周继续稳居 GitHub 总榜前十，Star 已超 35 万。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">8</span><a href="https://github.com/donnemartin/system-design-primer" target="_blank">donnemartin/system-design-primer</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 341,836</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    系统设计面试的最全参考资料，涵盖可扩展性、负载均衡、缓存、数据库分片、消息队列、微服务架构等核心概念。通过大量图解和真实案例分析（Twitter、Uber、Pastebin 等），帮助工程师建立系统化的设计思维。附带 Anki 记忆卡片，方便间隔复习。内容从初级到高级逐步递进，既适合面试准备，也是日常架构决策的参考。几乎是每个准备 FAANG 面试的工程师的必读资料。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">9</span><a href="https://github.com/jwasham/coding-interview-university" target="_blank">jwasham/coding-interview-university</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 340,535</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    一位自学成才的工程师为进入 Amazon 而制作的完整计算机科学学习计划。涵盖数据结构、算法、操作系统、网络、数据库等计算机科学核心课程，相当于一份浓缩版的 CS 本科课程表。每个知识点都附有视频讲座、书籍推荐和练习建议。作者 John Washam 最终成功进入 Amazon 工作，这份学习计划也因此成为"非科班转码"的标杆指南。虽然创建多年，但持续更新以反映面试趋势变化。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">10</span><a href="https://github.com/vinta/awesome-python" target="_blank">vinta/awesome-python</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 291,255</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Python 生态的百科全书式精选列表，按功能分类收录了数百个优质 Python 框架、库和工具。从 Web 框架（Django、Flask、FastAPI）到数据分析（Pandas、NumPy）、机器学习（scikit-learn、PyTorch）、自动化测试、DevOps 工具等，几乎涵盖 Python 生态的方方面面。每个条目都经过社区审核，确保推荐的是同类中最优秀的工具。对于 Python 开发者来说，这是发现新工具和评估技术选型的核心参考资源。
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 🤖 AI 热门 ==================== -->
+        <section class="section" id="ai">
+            <h2>🤖 AI 热门 Top 10</h2>
+            <p>AI / LLM / Agent 领域综合热度最高的项目</p>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank gold">1</span><a href="https://github.com/openclaw/openclaw" target="_blank">openclaw/openclaw</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 351,437</span>
+                        <span class="stat">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    开源个人 AI 助手框架的王者，Star 突破 35 万。OpenClaw 的设计理念是让每个人都拥有一个真正属于自己的 AI 助手——运行在自己的硬件上，连接自己的数据，用自己选择的模型。技能系统（AgentSkills）允许社区创建和分享可复用的能力模块，涵盖编程、家居控制、日程管理等场景。2026 年以来 Agent Harness 协议的推出进一步加速了生态增长，成为 AI 助手赛道事实上的开源标准。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank silver">2</span><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank">Significant-Gravitas/AutoGPT</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 183,228</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    自主 AI Agent 的先驱项目，旨在让 AI 能够自主设定子目标、执行任务并进行自我迭代。AutoGPT 平台已发展为一个完整的 Agent 构建和部署平台，提供可视化 Agent 编排界面、市场和托管服务。用户可以无需编码即创建复杂的 AI 工作流，将多个 Agent 串联执行多步骤任务。虽然后来者众多，但作为"自主 AI Agent"概念的开创者，AutoGPT 在社区影响力和品牌认知度上仍然占据独特地位。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank bronze">3</span><a href="https://github.com/n8n-io/n8n" target="_blank">n8n-io/n8n</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 182,912</span>
+                        <span class="stat">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    公平代码许可的工作流自动化平台，近期因深度集成 AI 能力而迎来第二春。n8n 提供可视化拖拽界面，支持 400+ 服务集成（Slack、Gmail、GitHub、数据库等），同时内置 AI Agent 节点，可直接在工作流中调用 LLM 进行决策。与 Zapier/Make 不同，n8n 可自托管，数据完全掌控在自己手中。2026 年原生 AI 功能的加入使其成为"AI 增强自动化"赛道的领跑者，社区贡献了大量 AI 驱动的自动化模板。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">4</span><a href="https://github.com/ollama/ollama" target="_blank">ollama/ollama</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 168,072</span>
+                        <span class="stat">Go</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    本地运行大语言模型的最简工具，一条命令即可拉取和运行 Kimi-K2.5、GLM-5、DeepSeek、Qwen、Gemma 等主流开源模型。基于 Go 开发，跨平台支持优秀，GPU 加速开箱即用。Ollama 的核心价值在于极度简化了本地 LLM 的使用门槛——无需配置 Python 环境、无需手动下载权重、无需处理量化转换。API 兼容 OpenAI 格式，与 Open WebUI、Continue 等工具无缝集成。2026 年持续增长，已成为本地 AI 基础设施的事实标准。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">5</span><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank">AUTOMATIC1111/stable-diffusion-webui</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 162,179</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Stable Diffusion 的图形化操作界面，AI 图像生成领域的国民级工具。支持 txt2img、img2img、inpainting、outpainting、ControlNet、LoRA 等几乎所有主流图像生成技术。插件生态极其丰富，社区开发了数千个扩展。虽然 ComfyUI 在节点化工作流方面后来居上，但 AUTOMATIC1111 的简洁界面和庞大的用户基础使其仍是最多人使用的 SD 前端。16 万 Star 的体量证明了 AI 生成艺术社区的惊人规模。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">6</span><a href="https://github.com/huggingface/transformers" target="_blank">huggingface/transformers</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 158,999</span>
+                        <span class="stat">Python</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Hugging Face 的模型定义框架，ML/AI 工程师的标准工具箱。提供统一 API 访问数万个预训练模型（NLP、CV、音频、多模态），支持 PyTorch、TensorFlow、JAX 三大框架。从 BERT 时代到如今的 LLM 时代，Transformers 库始终是学术研究和工业应用之间的桥梁。最新版本增强了对超大规模模型的支持，包括量化推理、流水线并行等。几乎每篇 AI 论文的复现代码都依赖这个库。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">7</span><a href="https://github.com/f/prompts.chat" target="_blank">f/prompts.chat</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 157,876</span>
+                        <span class="stat">HTML</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    原名 Awesome ChatGPT Prompts，已发展为全平台 AI 提示词的发现、分享和收集平台。收录了数千个经过社区验证的高质量提示词模板，覆盖角色扮演、编程辅助、写作、翻译、教育等场景。每个提示词都可以直接复制使用，并标注了适用的模型。2026 年随着 Agent 工作流的普及，平台新增了系统提示词和 Agent 指令模板板块。15 万+ Star 使其成为 AI 提示工程领域影响力最大的社区资源。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">8</span><a href="https://github.com/affaan-m/everything-claude-code" target="_blank">affaan-m/everything-claude-code</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 145,185</span>
+                        <span class="stat">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Claude Code Agent Harness 的性能优化与最佳实践大全，在短短两个月内从零飙升至 14.5 万 Star，堪称 2026 年最惊人的增长故事之一。项目系统性地整理了 Agent 技能（Skills）、本能反应（Instincts）、记忆系统（Memory）、自我进化（Self-evolve）四大模块的配置技巧和模板。每个模块都附带可直接使用的配置文件和详细的性能基准测试。对于使用 Claude Code 的开发者来说，这已成为必读的"性能调优手册"，也是 Agent 工程这一新兴领域的标杆参考。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">9</span><a href="https://github.com/langgenius/dify" target="_blank">langgenius/dify</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 136,656</span>
+                        <span class="stat">TypeScript</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    生产级 Agent 工作流开发平台，提供从 Prompt 编排到 RAG 管线、从 Agent 编排到应用发布的全流程可视化工具。支持接入数十种 LLM 提供商，内置知识库管理、对话日志分析、A/B 测试等企业级功能。2026 年重点发力 Agentic Workflow——允许用户通过拖拽构建复杂的多 Agent 协作流程，每个节点可独立配置模型、工具和决策逻辑。已被大量中小企业用于快速搭建内部 AI 应用，是"低代码 AI 平台"赛道的领军项目。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">10</span><a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools" target="_blank">x1xhlol/system-prompts-and-models-of-ai-tools</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 134,674</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    AI 工具系统提示词和模型配置的超级合集，收录了 Augment Code、Claude Code、Cursor、Devin AI、GitHub Copilot、Windsurf 等数十款主流 AI 编程工具的完整系统提示词。这些提示词通常是商业机密，但通过逆向工程和用户贡献被整理到这里。对于 AI 工具开发者来说是了解竞品设计思路的宝库，对于普通用户则是理解"AI 背后在想什么"的窗口。13 万+ Star 反映了开发者社区对 AI 工具透明度的强烈需求。
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 🌟 新星榜 ==================== -->
+        <section class="section" id="rising">
+            <h2>🌟 新星榜 Top 10</h2>
+            <p>近 60 天内创建的新项目，按新星指数（周增长/√总Star）排名，发现早期潜力股</p>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank gold">1</span><a href="https://github.com/milla-jovovich/mempalace" target="_blank">milla-jovovich/mempalace</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 19,276</span>
+                        <span class="stat new">🚀 新星指数 324.0</span>
+                        <span class="stat">创建 3 天 | 日增 ~6,425</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    本周最大黑马！由演员 Milla Jovovich 与开发者 Ben Sigman 联合发布的 AI 长期记忆系统，3 天内冲上近 2 万 Star。MemPalace 借鉴古典"记忆宫殿"术，将 AI 对话和数据组织成空间结构——"翼"（人物/项目/主题）、"殿"（事实/事件类型）、"室"（具体想法）。核心亮点：仅依赖 ChromaDB + PyYAML 即可本地运行，AAAK 压缩编码实现 30 倍压缩、120 个 token 即可加载数月上下文。在 LongMemEval 基准上达到 96.6% recall@5。通过 MCP 协议暴露 24 个工具，兼容 Claude、GPT、Cursor 等主流 LLM。不过独立分析指出部分 README 声明与代码实现存在差距，值得关注后续迭代。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank silver">2</span><a href="https://github.com/JuliusBrussee/caveman" target="_blank">JuliusBrussee/caveman</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 6,179</span>
+                        <span class="stat new">🚀 新星指数 183.4</span>
+                        <span class="stat">创建 3 天 | 日增 ~2,060</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    "为什么用很多 token 当少 token 就能搞定？"——一个让 Claude Code 说"原始人话"来节省 65-87% 输出 token 的技能插件，极其巧妙。核心思路是剥离语言填充词、客套话、冠词和模棱两可的表述，只保留技术实质。例如一段 69 token 的 React 渲染问题解释被压缩到 19 token，技术信息零损失。一行命令安装，支持 /caveman 开关切换。附带 Caveman Compress 工具可将 CLAUDE.md 等记忆文件也压缩成"原始人体"，输入 token 再省 45%。安全警告和不可逆操作时自动退出原始人模式确保关键信息清晰。简单到极致的创意，效果却惊人。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank bronze">3</span><a href="https://github.com/JackChen-me/open-multi-agent" target="_blank">JackChen-me/open-multi-agent</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 5,347</span>
+                        <span class="stat new">🚀 新星指数 73.1</span>
+                        <span class="stat">创建 7 天 | 日增 ~764</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    TypeScript 多 Agent 协作框架，核心卖点是"一个 runTeam() 调用搞定一切"。开发者只需定义 Agent 角色和任务描述，框架自动处理 Agent 间的通信协调、任务分解和结果汇总。支持多种协作模式：层级式（Manager → Workers）、平行式（多 Agent 独立执行后合并）、链式（流水线传递）。内置对 OpenAI、Anthropic、Google 等主流 LLM 的原生支持。一周 5000+ Star 说明多 Agent 编排的简化需求非常强烈，开发者厌倦了 LangGraph 的复杂配置。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">4</span><a href="https://github.com/lintsinghua/claude-code-book" target="_blank">lintsinghua/claude-code-book</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 2,360</span>
+                        <span class="stat new">🚀 新星指数 48.6</span>
+                        <span class="stat">创建 7 天 | 日增 ~337</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    《御舆：解码 Agent Harness》——一本 42 万字的中文技术书籍，深度拆解 AI Agent Harness 的骨架与神经系统，以 Claude Code 为主要分析对象。内容覆盖 Agent 循环架构、工具调用机制、记忆管理、权限系统、错误恢复等核心模块，配有大量代码级分析和架构图。作者来自清华背景，写作风格兼顾学术严谨与工程实用。对于想深入理解"AI 编程助手到底是怎么工作的"的开发者来说，这是目前中文世界最系统、最深入的参考资料。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">5</span><a href="https://github.com/PrathamLearnsToCode/paper2code" target="_blank">PrathamLearnsToCode/paper2code</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 693</span>
+                        <span class="stat new">🚀 新星指数 46.1</span>
+                        <span class="stat">创建 4 天 | 日增 ~173</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    将 arXiv 论文自动转化为可运行代码的 Agent 技能，解决了 AI 研究领域的痛点——论文看懂了但复现太难。输入一篇 arXiv 论文链接，Agent 自动阅读全文、提取方法论、生成实现代码、编写测试用例，最终输出一个可运行的项目。利用 LLM 的代码生成能力和对学术论文的理解能力，bridge 从"读论文"到"跑实验"的鸿沟。虽然还处于早期阶段，但 4 天 700 Star 的增速说明学术圈和工程圈对这类工具的渴望。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">6</span><a href="https://github.com/Windy3f3f3f3f/how-claude-code-works" target="_blank">Windy3f3f3f3f/how-claude-code-works</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 1,611</span>
+                        <span class="stat new">🚀 新星指数 40.1</span>
+                        <span class="stat">创建 7 天 | 日增 ~230</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Claude Code 内部机制的深度技术分析，从架构设计、Agent 循环、工具调用到权限模型进行全方位拆解。与 claude-code-book 的"教科书式"风格不同，本项目更像"逆向工程笔记"——通过实际阅读源码、抓包分析、行为测试来还原 Claude Code 的工作原理。对于想构建类似 AI 编程助手的开发者来说是珍贵的设计参考，对于高级用户则是深度调优的理论基础。一周 1600 Star 反映了"理解 AI 工具"而不只是"使用 AI 工具"的趋势。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">7</span><a href="https://github.com/openedclaude/claude-reviews-claude" target="_blank">openedclaude/claude-reviews-claude</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 1,245</span>
+                        <span class="stat new">🚀 新星指数 35.3</span>
+                        <span class="stat">创建 7 天 | 日增 ~178</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    "Claude 阅读自己的源代码"——一个 17 章的架构分析系列，让 Claude 自己来解读 Claude Code 的代码实现。这个元递归式的概念本身就很吸引眼球：AI 审视自己的代码，指出设计优缺点，提出改进建议。内容涵盖消息处理流水线、工具注册系统、上下文窗口管理、错误恢复策略等。每章都是 Claude 的"第一人称"视角分析，既有技术深度，又有独特的"自我认知"趣味。作为 AI 自我分析的实验，颇具思想启发性。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">8</span><a href="https://github.com/lorryjovens-hub/claude-code-rust" target="_blank">lorryjovens-hub/claude-code-rust</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 1,209</span>
+                        <span class="stat new">🚀 新星指数 34.8</span>
+                        <span class="stat">创建 7 天 | 日增 ~173</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    Claude Code 的 Rust 全量重构版本，号称性能提升 2.5 倍、二进制体积减少 97%。将原本基于 Node.js/TypeScript 的 Claude Code 用 Rust 从头实现，追求极致的启动速度和内存效率。对于在资源受限环境（树莓派、远程服务器）使用 AI 编程助手的开发者来说很有吸引力。项目展示了 Rust 社区对 AI 工具链"本土化重写"的热情——不满足于用就好，要用最高效的方式用。一周内积累 1200 Star，后续能否保持功能同步是关键挑战。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">9</span><a href="https://github.com/Arthur-Ficial/apfel" target="_blank">Arthur-Ficial/apfel</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 3,577</span>
+                        <span class="stat new">🚀 新星指数 29.9</span>
+                        <span class="stat">创建 14 天 | 日增 ~256</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    从命令行调用 Apple Intelligence 的工具——让 macOS/iOS 设备上的本地 LLM 能力通过终端访问。利用 Apple Silicon 芯片的 Neural Engine，在设备端运行推理而无需联网，数据完全不离开本机。支持文本生成、摘要、翻译、代码补全等功能，延迟低至毫秒级。对于注重隐私且使用 Apple 生态的开发者来说，这是一个让设备端 AI 能力"可编程化"的桥梁工具。两周 3500+ Star，说明开发者对"不花钱、不联网、不泄露数据"的本地 AI 方案需求旺盛。
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="project-name"><span class="rank">10</span><a href="https://github.com/tanweai/pua" target="_blank">tanweai/pua</a></div>
+                    <div class="project-stats">
+                        <span class="stat hot">⭐ 15,447</span>
+                        <span class="stat new">🚀 新星指数 29.0</span>
+                        <span class="stat">创建 30 天 | 日增 ~515</span>
+                    </div>
+                </div>
+                <div class="project-intro">
+                    "你是一个曾经被寄予厚望的 P8 级工程师"——一个用互联网大厂 PUA 话术激励 AI Agent 不放弃、不偷懒的技能插件，堪称本季度最具中国特色的 AI 项目。核心思路是模拟职场压力：把 AI 当作一个在绩效考核中表现不佳的高级工程师，通过"期望对齐"、"压力递增"、"方法论切换"（阿里/字节/华为风格轮番上阵）迫使 AI 穷尽一切可能方案。虽然概念看似搞笑，但效果出人意料——多个用户报告 AI 在面对困难任务时确实变得更加执着和富有创造力。一个月 1.5 万 Star，已成为 AI 技能市场的现象级产品。
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; margin-top: 3rem; padding: 2rem; color: #666; border-top: 1px solid #eee;">
+            <p>📊 由 Neo 🕶️ 自动生成 | 数据来源: GitHub API + Web Search</p>
+            <p>🔗 <a href="https://github.com/MashellHan/github-weekly-reports">项目源码</a></p>
+        </footer>
+    </main>
+</body>
+</html>
